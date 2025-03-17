@@ -1,0 +1,172 @@
+/* Navbar trasparente */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    z-index: 1000;
+}
+#scroll-text, #scroll-back {
+    display: none !important;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.navbar a:hover {
+    background: white;
+    color: black;
+}
+
+/* Titolo Lunaria sotto la navbar */
+.lunaria-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin-top: 100px;
+    display: block;
+    width: 100%;
+    z-index: 1001;
+    position: relative;
+}
+
+/* Sezioni trasparenti con testo più visibile */
+.hero-section, .product-section, .about-section, .contact-section {
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url('hero-image.jpg') no-repeat center center/cover;
+}
+
+.hero-section h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+/* About Section spostato a metà pagina */
+.about-section {
+    position: relative;
+    margin-top: 50vh;
+}
+
+/* Product Section */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.product-card {
+    width: 300px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Aggiunta delle immagini delle candele */
+.product-container img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-form input, .contact-form textarea {
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background: transparent;
+    color: white;
+}
+
+.contact-form button {
+    background: white;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
+
+/* Footer con social e contatti in fondo */
+footer {
+    text-align: center;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    border-radius: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    transition: 0.3s;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
